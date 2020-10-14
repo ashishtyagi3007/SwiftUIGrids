@@ -3,19 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B13FE6342536AA3600480DF5 /* SwiftUIGridsSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13FE6332536AA3600480DF5 /* SwiftUIGridsSearchApp.swift */; };
+		B13FE6342536AA3600480DF5 /* SwiftUIGridsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13FE6332536AA3600480DF5 /* SwiftUIGridsApp.swift */; };
 		B13FE6362536AA3600480DF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13FE6352536AA3600480DF5 /* ContentView.swift */; };
 		B13FE6382536AA3A00480DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B13FE6372536AA3A00480DF5 /* Assets.xcassets */; };
 		B13FE63B2536AA3A00480DF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B13FE63A2536AA3A00480DF5 /* Preview Assets.xcassets */; };
+		B13FE64B2536D4AB00480DF5 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B13FE64A2536D4AB00480DF5 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B13FE6302536AA3600480DF5 /* SwiftUIGridsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGridsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B13FE6332536AA3600480DF5 /* SwiftUIGridsSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridsSearchApp.swift; sourceTree = "<group>"; };
+		B13FE6302536AA3600480DF5 /* SwiftUIGrids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGrids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13FE6332536AA3600480DF5 /* SwiftUIGridsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridsApp.swift; sourceTree = "<group>"; };
 		B13FE6352536AA3600480DF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B13FE6372536AA3A00480DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B13FE63A2536AA3A00480DF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13FE64B2536D4AB00480DF5 /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +38,7 @@
 		B13FE6272536AA3600480DF5 = {
 			isa = PBXGroup;
 			children = (
-				B13FE6322536AA3600480DF5 /* SwiftUIGridsSearch */,
+				B13FE6322536AA3600480DF5 /* SwiftUIGrids */,
 				B13FE6312536AA3600480DF5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +46,21 @@
 		B13FE6312536AA3600480DF5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B13FE6302536AA3600480DF5 /* SwiftUIGridsSearch.app */,
+				B13FE6302536AA3600480DF5 /* SwiftUIGrids.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B13FE6322536AA3600480DF5 /* SwiftUIGridsSearch */ = {
+		B13FE6322536AA3600480DF5 /* SwiftUIGrids */ = {
 			isa = PBXGroup;
 			children = (
-				B13FE6332536AA3600480DF5 /* SwiftUIGridsSearchApp.swift */,
+				B13FE6332536AA3600480DF5 /* SwiftUIGridsApp.swift */,
 				B13FE6352536AA3600480DF5 /* ContentView.swift */,
 				B13FE6372536AA3A00480DF5 /* Assets.xcassets */,
 				B13FE63C2536AA3A00480DF5 /* Info.plist */,
 				B13FE6392536AA3A00480DF5 /* Preview Content */,
 			);
-			path = SwiftUIGridsSearch;
+			path = SwiftUIGrids;
 			sourceTree = "<group>";
 		};
 		B13FE6392536AA3A00480DF5 /* Preview Content */ = {
@@ -72,9 +74,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B13FE62F2536AA3600480DF5 /* SwiftUIGridsSearch */ = {
+		B13FE62F2536AA3600480DF5 /* SwiftUIGrids */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B13FE63F2536AA3A00480DF5 /* Build configuration list for PBXNativeTarget "SwiftUIGridsSearch" */;
+			buildConfigurationList = B13FE63F2536AA3A00480DF5 /* Build configuration list for PBXNativeTarget "SwiftUIGrids" */;
 			buildPhases = (
 				B13FE62C2536AA3600480DF5 /* Sources */,
 				B13FE62D2536AA3600480DF5 /* Frameworks */,
@@ -84,9 +86,12 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUIGridsSearch;
+			name = SwiftUIGrids;
+			packageProductDependencies = (
+				B13FE64A2536D4AB00480DF5 /* KingfisherSwiftUI */,
+			);
 			productName = SwiftUIGridsSearch;
-			productReference = B13FE6302536AA3600480DF5 /* SwiftUIGridsSearch.app */;
+			productReference = B13FE6302536AA3600480DF5 /* SwiftUIGrids.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B13FE62B2536AA3600480DF5 /* Build configuration list for PBXProject "SwiftUIGridsSearch" */;
+			buildConfigurationList = B13FE62B2536AA3600480DF5 /* Build configuration list for PBXProject "SwiftUIGrids" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,11 +117,14 @@
 				Base,
 			);
 			mainGroup = B13FE6272536AA3600480DF5;
+			packageReferences = (
+				B13FE6492536D4AB00480DF5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B13FE6312536AA3600480DF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B13FE62F2536AA3600480DF5 /* SwiftUIGridsSearch */,
+				B13FE62F2536AA3600480DF5 /* SwiftUIGrids */,
 			);
 		};
 /* End PBXProject section */
@@ -139,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B13FE6362536AA3600480DF5 /* ContentView.swift in Sources */,
-				B13FE6342536AA3600480DF5 /* SwiftUIGridsSearchApp.swift in Sources */,
+				B13FE6342536AA3600480DF5 /* SwiftUIGridsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +276,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIGridsSearch/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIGrids/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIGridsSearch/Info.plist;
+				INFOPLIST_FILE = SwiftUIGrids/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.SwiftUIGridsSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.SwiftUIGrids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,15 +297,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIGridsSearch/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIGrids/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIGridsSearch/Info.plist;
+				INFOPLIST_FILE = SwiftUIGrids/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.SwiftUIGridsSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.SwiftUIGrids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B13FE62B2536AA3600480DF5 /* Build configuration list for PBXProject "SwiftUIGridsSearch" */ = {
+		B13FE62B2536AA3600480DF5 /* Build configuration list for PBXProject "SwiftUIGrids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B13FE63D2536AA3A00480DF5 /* Debug */,
@@ -316,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B13FE63F2536AA3A00480DF5 /* Build configuration list for PBXNativeTarget "SwiftUIGridsSearch" */ = {
+		B13FE63F2536AA3A00480DF5 /* Build configuration list for PBXNativeTarget "SwiftUIGrids" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B13FE6402536AA3A00480DF5 /* Debug */,
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B13FE6492536D4AB00480DF5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B13FE64A2536D4AB00480DF5 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B13FE6492536D4AB00480DF5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B13FE6282536AA3600480DF5 /* Project object */;
 }
